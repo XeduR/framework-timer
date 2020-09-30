@@ -31,6 +31,11 @@ local executions1, executions2 = 0, 0
 local timer1 = timerNew.performWithDelay( 1000, function() executions1 = executions1 + 1; print ("timer1, tag=\"red\",  executed", executions1) end, 2, "red" )
 local timer2 = timerNew.performWithDelay( 1500, function() executions2 = executions2 + 1; print ("timer2, tag=\"blue\", executed", executions2) end, 2, "blue" )
 
+-- my_timer = timerNew.performWithDelay(0, function()
+-- 	print("Pausing timer")
+-- 	timerNew.pause(my_timer)
+-- end, -1 )
+
 local buttonSize = display.contentWidth/5-8
 local buttonX =  display.contentWidth/5
 local buttonY =  display.contentCenterY
